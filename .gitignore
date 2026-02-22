@@ -6,3 +6,10 @@ __pycache__/
 *.pyo
 .eggs/
 *.egg-info/
+src/DynamixelSDK/
+src/ROBOTIS-Framework
+src/ROBOTIS-Framework-msgs/
+src/ROBOTIS-Math/
+src/ROBOTIS-OP3
+src/ROBOTIS-OP3-msgs/
+src/ROBOTIS-OP3-Tools/
