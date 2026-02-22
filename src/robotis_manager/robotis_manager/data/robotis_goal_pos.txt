@@ -1,0 +1,1 @@
+{'robotis_goal_pos_lower_val': [3, 68, 21], 'robotis_goal_pos_upper_val': [33, 255, 243]}
