@@ -14,7 +14,7 @@ from robotis_manager.motion_data_flow_handler import Data, Ticks, TASKSTA_STANDB
 from robotis_manager.motion_utility import MotionUtility as util
 from robotis_manager.motion_head_control_module import HeadTracking, HEAD_PAN, CTRL_NUM, KF_BALL_POS_X, KF_BALL_POS_Y
 from robotis_manager.motion_control_module import BaseControl, BODY_REF, BODY_PAN, STEP_CORRECTION, mapF
-from robotis_manager.motion_control_module import INIT_HEAD_TILT, KF_YAW_ERROR, BALL_SETPOINT, STEP_SPEED_X
+from robotis_manager.motion_control_module import INIT_HEAD_TILT, KF_YAW_ERROR, BALL_SETPOINT, STEP_SPEED_X, KF_BALL_SIZE, KF_BALL_POS
 from robotis_manager.robocup_game_controller_handler import GameControllerListener
 from robotis_manager.robocup_udp_controller_handler import UDPClient
 

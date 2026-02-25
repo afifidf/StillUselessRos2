@@ -13,6 +13,7 @@ from launch import LaunchDescription
 from launch_ros.actions import Node
 from launch_ros.substitutions import FindPackageShare
 from launch.substitutions import PathJoinSubstitution
+from ament_index_python.packages import get_package_share_directory
 
 
 def generate_launch_description():
@@ -21,6 +22,8 @@ def generate_launch_description():
         'config',
         'camera_param.yaml'
     ])
+
+    op3_share = get_package_share_directory('op3_manager')
 
     return LaunchDescription([
 
@@ -34,7 +37,13 @@ def generate_launch_description():
             name='op3_manager',
             output='screen',
             parameters=[{
+                'angle_unit': 30.0,
                 'gazebo': False,
+                'gazebo_robot_name': 'robotis_op3',
+                'offset_file_path': op3_share + '/config/offset.yaml',
+                'robot_file_path': op3_share + '/config/OP3.robot',
+                'init_file_path': op3_share + '/config/dxl_init_OP3.yaml',
+                'device_name': '/dev/ttyUSB0',
             }],
         ),
 
